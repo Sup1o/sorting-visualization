@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <div id="container"></div>
+    <div class="input">
+        <h3>list size:</h3>
+        <input type="text" id="n" value="50">
+        <h3 id="error" style="display: none;">error</h3>
+        <h3>for best performance we recommend you to choose the size from 2 to 500</h3>
+        <h3 id="time" style="display: none;"></h3>
+        <h3 id="swap" style="display: none;"></h3>
+    </div>
+    <div class="btn">
+        <button onclick="init()" id="init">reset list</button>
+        <button onclick="playBubbleSort()">Bubble Sort</button>
+        <button onclick="playInsertionSort()">Insertion Sort</button>
+        <button onclick="playSelectionSort()">Selection Sort</button>
+        <button onclick="playQuickSort()">Quick Sort</button>
+        <button onclick="playHeapSort()">Heap Sort</button>
+        <button id="stop">stop</button>
+    </div>
+    <script src="sorting.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
